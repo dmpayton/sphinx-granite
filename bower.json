@@ -1,0 +1,35 @@
+{
+  "name": "granite",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dmpayton/sphinx-granite",
+  "authors": [
+    "Derek Payton <derek.payton@gmail.com>"
+  ],
+  "description": "A Stripe/Slate-inspired theme for Sphinx",
+  "license": "MIT",
+  "main": [
+    "dist/**"
+  ],
+  "ignore": [
+    ".bowerrc",
+    ".DS_Store",
+    ".gitignore",
+    ".sass-cache*",
+    "bower.json",
+    "bower_components",
+    "demo_docs",
+    "docs",
+    "gulpfile.js",
+    "node_modules",
+    "package.json",
+    "src",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "4.0.0-alpha"
+  },
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}

@@ -1,0 +1,142 @@
+.content
+
+    table.docutils:not(.field-list):not(.footnote):not(.citation)
+        @extend .table
+        @extend .table-bordered
+        @extend .table-responsive
+        @extend .table-striped
+
+        th, td
+            white-space: nowrap
+
+    table.docutils.citation, table.docutils.footnote
+        @extend .table
+        color: $gray-light
+
+        td, tr
+            padding: $table-cell-padding
+            white-space: normal
+
+        // Bootstrap targets `.label` so we have to reset a bunch of things
+        td.label
+            display: table-cell
+            color: $gray-light
+            font-size: $font-size-base
+            font-weight: normal
+            line-height: $line-height
+            padding: $table-cell-padding
+            vertical-align: top
+
+        code
+            color: $gray-light
+
+    table.docutils.field-list
+        border: none
+        td, th
+            border: none
+            padding: ($spacer / 4)
+        td > strong
+            display: inline-block
+        .field-name
+            text-align: left
+            white-space: nowrap
+        .field-body
+            text-align: left
+
+    h1, h2, h3, h4, h5, h6, dl dt, p.caption
+        .headerlink
+            @extend .fa
+            display: none
+            font-size: $font-size-base
+            visibility: hidden
+
+            &:after
+                content: $fa-var-link
+                display: inline-block
+                visibility: visible
+
+        &:hover .headerlink
+            display: inline-block
+
+    .toc-backref
+        color: $gray-darker
+        text-decoration: none
+
+    .line-block
+        margin-left: $spacer
+
+    .admonition
+        background-color: $state-info-bg
+        // color: $state-info-text
+        margin-bottom: $spacer
+        padding: ($spacer / 2)
+
+        .admonition-title
+            @extend .fa
+            @extend .fa-exclamation-circle
+            background-color: $brand-info
+            color: #fff
+            display: block
+            font-weight: bold
+            margin: (($spacer / 2) * -1)
+            margin-bottom: ($spacer / 2)
+            padding: $alert-padding
+
+            &:before
+                margin-right: $alert-padding
+
+        .last
+            margin-bottom: 0
+
+        &.attention, &.caution, &.warning
+            background-color: $state-warning-bg
+            // color: $state-warning-text
+
+            .admonition-title
+                background-color: $brand-warning
+
+        &.danger, &.error
+            background-color: $state-danger-bg
+            // color: $state-danger-text
+
+            .admonition-title
+                background-color: $brand-danger
+
+        &.hint, &.important, &.tip
+            background-color: $state-success-bg
+            // color: $state-success-text
+
+            .admonition-title
+                background-color: $brand-success
+
+
+    .sidebar
+        border: $gray-lighter 1px solid
+        display: block
+        float: right
+        font-size: $font-size-sm
+        margin: 0 0 $spacer $spacer
+        padding: ($spacer / 2)
+        width: 40%
+
+        .sidebar-title
+            background-color: $gray-lighter
+            font-family: $font-family-serif
+            font-size: $font-size-base
+            font-weight: bold
+            margin: (($spacer / 2) * -1)
+            margin-bottom: ($spacer / 2)
+            padding: ($spacer / 4) ($spacer / 2)
+
+        .last
+            margin-bottom: 0
+
+    .highlight pre
+        @import "pygments-light";
+        background-color: $gray-lighter
+        padding: $spacer / 2
+
+    .example .highlight pre
+        @import "pygments-dark";
+        background-color: transparent
+        padding: 0

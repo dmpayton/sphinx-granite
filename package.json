@@ -1,0 +1,17 @@
+{
+  "name": "sphinx-granite",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "connect-livereload": "^0.5.3",
+    "express": "~4.13.3",
+    "gulp": "~3.9.0",
+    "gulp-bower": "~0.0.10",
+    "gulp-concat": "~2.6.0",
+    "gulp-livereload": "~3.8.0",
+    "gulp-load-plugins": "~1.0.0-rc.1",
+    "gulp-sass": "~2.0.4",
+    "gulp-watch": "~4.3.5",
+    "tiny-lr": "~0.1.6"
+  }
+}
