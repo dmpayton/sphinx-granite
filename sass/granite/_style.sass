@@ -1,10 +1,6 @@
 hr
     @extend .clearfix
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6
-    margin-top: $spacer
-
 .branding
     background-color: $accent-color
     color: #fff
@@ -75,9 +71,10 @@ h1, h2, h3, h4, h5, h6,
         padding: 0
 
 .language-menu
+    @extend .small
     background-color: $gray-dark
     display: none
-    padding: $spacer
+    padding: $spacer ($spacer * 2)
     z-index: 1
 
     .nav-link
@@ -88,7 +85,7 @@ h1, h2, h3, h4, h5, h6,
             color: $gray-lighter
 
         &.active, &.active:hover, &.active:focus
-            background-color: $accent-color
+            background-color: lighten($accent-color, 25%)
 
 .breadcrumb
     margin-bottom: $spacer

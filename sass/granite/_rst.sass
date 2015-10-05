@@ -67,7 +67,6 @@
 
     .admonition
         background-color: $state-info-bg
-        // color: $state-info-text
         margin-bottom: $spacer
         padding: ($spacer / 2)
 
@@ -108,6 +107,68 @@
 
             .admonition-title
                 background-color: $brand-success
+
+    dl:not(.docutils)
+        margin-bottom: $spacer
+
+        // This would be the equivilant of a .. class::
+        dt
+            background: lighten($accent-color, 50%)
+            border-top: solid 3px lighten($accent-color, 10%)
+            color: $body-color
+            display: block
+            font-size: 90%
+            line-height: normal
+            margin: $spacer 0 ($spacer / 2) 0
+            padding: $spacer / 2
+            position: relative
+
+            &:before
+                color: lighten($accent-color, 20%)
+
+        .headerlink
+            color: $body-color
+            font-size: 100% !important
+
+        // And this would be the .. method::
+        dl dt
+            background: hsl(0, 0%, 94%)
+            border-left: solid 3px hsl(0, 0%, 80%)
+            border: none
+            color: $accent-color
+            margin-bottom: $spacer
+
+            .headerlink
+                color: $headings-color
+                font-size: 100% !important
+
+        dt:first-child
+            margin-top: 0
+
+        // Since dts get the callout style, we treat this less as callouts.
+        tt, code
+            font-weight: bold
+
+            &.descname, &.descclassname
+                background-color: transparent
+                border: none
+                color: inherit
+                font-size: 100% !important
+                padding: 0
+
+            &.descname
+                font-weight: bold
+
+        // This is for more advanced parameter control
+        .optional
+            color: #000
+            display: inline-block
+            font-weight: bold
+            padding: 0 4px
+
+        .property
+            display: inline-block
+            padding-right: 8px
 
 
     .sidebar
