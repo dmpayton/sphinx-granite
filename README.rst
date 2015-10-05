@@ -2,9 +2,9 @@
 Granite
 =======
 
-A `Sphinx <http://sphinx-doc.org/>` theme for API docs. This theme was heavily
-inspird by the `ReadTheDocs Theme <https://github.com/snide/sphinx_rtd_theme>`,
-but is implemented using `Bootstrap 4 <http://v4-alpha.getbootstrap.com/>`.
+A `Sphinx <http://sphinx-doc.org/>`_ theme for API docs. This theme was heavily
+inspird by the `ReadTheDocs Theme <https://github.com/snide/sphinx_rtd_theme>`_,
+but is implemented using `Bootstrap 4 <http://v4-alpha.getbootstrap.com/>`_.
 
 Example:
 
