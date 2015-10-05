@@ -9,18 +9,18 @@
         $langMenu.find('a[data-language="' + key + '"]').addClass('active');
 
         // Display the selected examples
-        $content.find('.example .language').css('display', 'none');
-        $content.find('.example .language.' + key).css('display', 'block');
+        $content.find('.example').css('display', 'none');
+        $content.find('.example.' + key).css('display', 'block');
       };
 
     // Only show the language menu if there are examples on the page...
-    if($content.find('.example .language').length){
+    if($content.find('.example').length){
       $.each(GRANITE_LANGUAGES, function(idx){
         var key = GRANITE_LANGUAGES[idx][0],
           name = GRANITE_LANGUAGES[idx][1];
 
         // ...and only show the avilable examples
-        if($content.find('.example .language.' + key).length){
+        if($content.find('.example.' + key).length){
           $langNav.append(
             '<li class="nav-item">' +
               '<a href="#' + key + '" class="nav-link" data-language="' + key + '">' +

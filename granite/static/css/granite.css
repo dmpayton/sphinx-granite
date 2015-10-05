@@ -3387,7 +3387,7 @@ a.bg-danger:focus, a.bg-danger:hover { background-color: #c9302c; }
 
 span[id*='MathJax-Span'] { color: #373a3c; }
 
-.math { text-align: center; }
+.math { margin-bottom: 1rem; text-align: center; }
 
 .content table.docutils:not(.field-list):not(.footnote):not(.citation) th, .content table.docutils:not(.field-list):not(.footnote):not(.citation) td { white-space: nowrap; }
 
