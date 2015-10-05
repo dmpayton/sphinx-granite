@@ -1,22 +1,23 @@
 @import "bootstrap/scss/mixins/breakpoints";
 
+@include media-breakpoint-up(md)
+    header
+        left: 0
+        position: absolute
+        width: 25%
+
+    .content, .language-menu
+        left: 25%
+        position: relative
+        width: 75%
+
 @include media-breakpoint-up(lg)
     header
         left: 0
         position: absolute
-        width: 14%
+        width: 15%
 
-    .content
-        left: 14%
-        position: absolute
-        width: 43%
-
-        .example
-            left: 100%
-            position: absolute
-            width: 100%
-
-    .language-menu
-        left: 57%
-        position: absolute
-        width: 43%
+    .content, .language-menu
+        left: 15%
+        position: relative
+        width: 60%

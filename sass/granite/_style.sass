@@ -1,6 +1,15 @@
-header
-    background-color: $body-bg
+hr
+    @extend .clearfix
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+    margin-top: $spacer
+
+.branding
+    background-color: $accent-color
     color: #fff
+    padding: $spacer
+    text-align: center
 
     a.name
         color: #fff
@@ -10,10 +19,6 @@ header
     .version
         color: $gray-lighter
         opacity: .75
-
-.branding
-    padding: $spacer / 2
-    text-align: center
 
 .searchbox
     margin-top: $spacer / 2
@@ -25,7 +30,7 @@ header
     a
         color: $gray
         display: block
-        padding: ($spacer / 4) ($spacer / 2)
+        padding: ($spacer / 2) $spacer
 
         &:hover
             background-color: darken($gray-lighter, 10%)
@@ -36,6 +41,9 @@ header
         list-style-type: none
         margin: 0
         padding: 0
+
+        ul
+            display: none
 
     li.current
         background-color: #fff
@@ -48,7 +56,8 @@ header
             border-right: 2px solid $gray-lighter
 
         ul
-            padding-left: ($spacer / 2)
+            display: block
+            padding-left: $spacer
 
             a:hover
                 background-color: inherit
@@ -57,7 +66,7 @@ header
     .caption
         color: $gray-light
         margin: 0
-        padding: ($spacer / 2)
+        padding: $spacer
         text-transform: uppercase
 
     code
@@ -66,9 +75,10 @@ header
         padding: 0
 
 .language-menu
-    background-color: darken($gray-dark, 5%)
+    background-color: $gray-dark
     display: none
-    padding: ($spacer / 2)
+    padding: $spacer
+    z-index: 1
 
     .nav-link
         color: $gray-light
@@ -91,17 +101,8 @@ header
 
 .content
     background-color: #fff
-    padding: ($spacer / 2) $spacer
+    padding: $spacer ($spacer * 2)
 
     .container
         margin: 0
         padding: 0
-
-    .example
-        background-color: darken($gray-dark, 5%)
-        color: $gray-lighter
-        padding: $spacer
-        padding-bottom: 0
-
-        pre
-            color: $gray-light

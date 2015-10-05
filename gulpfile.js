@@ -7,8 +7,8 @@ var express = require('express'),
   $ = require('gulp-load-plugins')();
 
 var config = {
-  livereloadPort: 35728,
-  serverPort: 8080
+  livereloadPort: 35729,
+  serverPort: 8081
 };
 
 var server = express();
@@ -35,11 +35,13 @@ gulp.task('sass', function(){
     .pipe($.livereload(lrserver));
 });
 
+
 gulp.task('fonts', function(){
   gulp.src('./bower_components/font-awesome/fonts/*')
     .pipe(gulp.dest('granite/static/fonts/'))
   $.livereload(lrserver);
 });
+
 
 gulp.task('build', function(){
   execSync('sphinx-build demo_docs/source demo_docs/build');
