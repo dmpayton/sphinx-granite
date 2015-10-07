@@ -98,7 +98,7 @@
         </div>
     </header>
 
-    <div class="language-menu ">
+    <div class="example-menu ">
         <!-- Populated on page load by js -->
         <ul class="nav nav-pills clearfix"></ul>
     </div>
@@ -119,12 +119,13 @@
                 HAS_SOURCE:  {{ has_source|lower }}
             };
 
-            var GRANITE_LANGUAGES = {{ granite_languages }};
+            var GRANITE_EXAMPLES = {{ granite_languages }};
         </script>
         {% for scriptfile in script_files %}
             <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
         {% endfor %}
 
+        <script type="text/javascript" src="{{ pathto('_static/js/jquery.history.js', 1) }}"></script>
         <script type="text/javascript" src="{{ pathto('_static/js/granite.js', 1) }}"></script>
 
     {% endif %}

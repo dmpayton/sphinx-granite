@@ -198,7 +198,7 @@ h6, .h6 { font-size: 1rem; }
 
 hr { margin-top: 1rem; margin-bottom: 1rem; border: 0; border-top: 0.0625rem solid rgba(0, 0, 0, 0.1); }
 
-small, .small, .language-menu { font-size: 80%; font-weight: normal; }
+small, .small, .example-menu { font-size: 80%; font-weight: normal; }
 
 mark, .mark { padding: .2em; background-color: #fcf8e3; }
 
@@ -1632,7 +1632,7 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover { z-index: 2; color: #fff; background-color: #0275d8; border-color: #0275d8; }
 
-.list-group-item.active .list-group-item-heading, .list-group-item.active .list-group-item-heading > small, .list-group-item.active .list-group-item-heading > .small, .list-group-item.active .list-group-item-heading > .language-menu, .list-group-item.active:focus .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading > small, .list-group-item.active:focus .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading > .language-menu, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading > small, .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading > .language-menu { color: inherit; }
+.list-group-item.active .list-group-item-heading, .list-group-item.active .list-group-item-heading > small, .list-group-item.active .list-group-item-heading > .small, .list-group-item.active .list-group-item-heading > .example-menu, .list-group-item.active:focus .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading > small, .list-group-item.active:focus .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading > .example-menu, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading > small, .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading > .example-menu { color: inherit; }
 
 .list-group-item.active .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .list-group-item.active:hover .list-group-item-text { color: #a8d6fe; }
 
@@ -3380,10 +3380,10 @@ a.bg-danger:focus, a.bg-danger:hover { background-color: #c9302c; }
 .fa-fonticons:before { content: ""; }
 
 @media (min-width: 48em) { header { left: 0; position: absolute; width: 25%; }
-  .content, .language-menu { left: 25%; position: relative; width: 75%; } }
+  .content, .example-menu { left: 25%; position: relative; width: 75%; } }
 
 @media (min-width: 62em) { header { left: 0; position: absolute; width: 15%; }
-  .content, .language-menu { left: 15%; position: relative; width: 60%; } }
+  .content, .example-menu { left: 15%; position: relative; width: 60%; } }
 
 span[id*='MathJax-Span'] { color: #373a3c; }
 
@@ -3621,13 +3621,13 @@ span[id*='MathJax-Span'] { color: #373a3c; }
 
 .main-menu code { background-color: transparent; color: #55595c; padding: 0; }
 
-.language-menu { background-color: #373a3c; display: none; padding: 1rem 2rem; z-index: 1; }
+.example-menu { background-color: #373a3c; display: none; padding: 1rem 2rem; z-index: 1; }
 
-.language-menu .nav-link { color: #818a91; }
+.example-menu .nav-link { color: #818a91; }
 
-.language-menu .nav-link:hover { background-color: #373a3c; color: #eceeef; }
+.example-menu .nav-link:hover { background-color: #373a3c; color: #eceeef; }
 
-.language-menu .nav-link.active, .language-menu .nav-link.active:hover, .language-menu .nav-link.active:focus { background-color: #79a6d2; }
+.example-menu .nav-link.active, .example-menu .nav-link.active:hover, .example-menu .nav-link.active:focus { background-color: #79a6d2; }
 
 .breadcrumb { margin-bottom: 1rem; }
 
