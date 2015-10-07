@@ -53,7 +53,7 @@ function getCookie(cname) {
           var cookieEx = getCookie('granite-example'),
           urlEx = $.getQueryParameters()['example'],
           firstEx = $exMenu.find('.nav-link').first().data('example');
-        return cookieEx || urlEx || firstEx;
+        return urlEx || cookieEx || firstEx;
       };
 
     History.Adapter.bind(window, 'statechange', function(){
