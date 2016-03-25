@@ -28,9 +28,9 @@ Example:
         .. code-block:: python
 
             def fibo(n):
-                if n == 1 or n == 2:
+                if n <= 2:
                     return 1
-                return fib(n - 1) + fib(n - 2)
+                return fibo(n - 1) + fibo(n - 2)
 
     .. container:: example  ruby
 
@@ -39,8 +39,8 @@ Example:
         .. code-block:: ruby
 
             def fibo(n)
-                return n if n <= 2
-                fibonacci(n - 1) + fibonacci(n - 2)
+                return 1 if n <= 2
+                fibo(n - 1) + fibo(n - 2)
             end
 
     .. container:: example javascript
