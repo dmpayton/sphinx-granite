@@ -87,7 +87,7 @@
 
         <div class="main-menu">
             {% block menu %}
-                {% set toctree = toctree(maxdepth=4, collapse=theme_collapse_navigation, includehidden=True) %}
+                {% set toctree = toctree(maxdepth=3, collapse=theme_collapse_navigation, includehidden=True) %}
                 {% if toctree %}
                     {{ toctree }}
                 {% else %}
