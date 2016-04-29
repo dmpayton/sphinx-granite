@@ -83,7 +83,7 @@ function getCookie(cname) {
         .css('display', 'block')
         .find('a.nav-link').on('click', function(){
           var key = $(this).data('example');
-          History.replaceState({example: key}, document.title, '?example=' + key)
+          History.replaceState({example: key}, document.title, '?example=' + key + location.hash)
           return false;
         });
 
