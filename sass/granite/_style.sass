@@ -45,11 +45,14 @@ hr
         background-color: #fff
 
         &> a
-            color: $accent-color
             background-color: darken($gray-lighter, 10%)
+            color: $accent-color
 
-        &> ul
-            border-right: 2px solid $gray-lighter
+        & li.current > a
+            background-color: #fff
+
+        a.current
+            font-weight: bold
 
         ul
             display: block
@@ -61,6 +64,7 @@ hr
 
     .caption
         color: $gray-light
+        font-weight: bold
         margin: 0
         padding: $spacer
         text-transform: uppercase
@@ -103,3 +107,6 @@ hr
     .container
         margin: 0
         padding: 0
+
+    .section
+        margin-bottom: $spacer
