@@ -2,7 +2,7 @@
 Granite
 =======
 
-A `Sphinx <http://sphinx-doc.org/>`_ theme for API docs. This theme was heavily
+A `Sphinx <http://sphinx-doc.org/>`_ theme for API docs with Stripe-style togglable language- (or library-) specific examples. This theme was heavily
 inspird by the `ReadTheDocs Theme <https://github.com/snide/sphinx_rtd_theme>`_,
 but is implemented using `Bootstrap 4 <http://v4-alpha.getbootstrap.com/>`_.
 
@@ -28,9 +28,9 @@ Example:
         .. code-block:: python
 
             def fibo(n):
-                if n == 1 or n == 2:
+                if n <= 2:
                     return 1
-                return fib(n - 1) + fib(n - 2)
+                return fibo(n - 1) + fibo(n - 2)
 
     .. container:: example  ruby
 
@@ -39,8 +39,8 @@ Example:
         .. code-block:: ruby
 
             def fibo(n)
-                return n if n <= 2
-                fibonacci(n - 1) + fibonacci(n - 2)
+                return 1 if n <= 2
+                fibo(n - 1) + fibo(n - 2)
             end
 
     .. container:: example javascript
